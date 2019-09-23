@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<title>Bienvenido al cajero de CristianLp</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="animate.css">
+<script src="animate.css"></script>
+<script>
+new WOW().init();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body
+{
+  background-color: #d3cfb3;
+  text-align: center;
+  font-family: serif;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 style="color: blue">MrCrisjan ATM</h1>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <br /><hr color="#47646b" />
+      <h2><font color="#e21b1b">¿Como usar el cajero?</font></h2>
+      <p>> Pon la cantidad de dinero que <br />quieres sacar en billetes (COP).</p>
+      <p>> Haz click en "extraer" y dígita la clave "<strong>1837</strong>"!</p>
+      <p>> Recuerda que hay dinero limitado, <br />puedes ver la cantidad de billetes
+      <br />al lado derecho.</p>
+      <p>*Haz click en el boton "<strong>Otra vez</strong>" para
+      <br />reiniciar el saldo.</p><br /><hr color="#47646b"/>
+    </div>
+    <div class="col-sm-4">
+      <p><input type="button" value="Otra vez" id="reiniciar"/><p>
+      <p><div class = "wow bounceIn" data-wow-duration="2s" data-wow-delay="4s">
+        <img src="https://i.imgur.com/9f9VCsa.gif" style="width:100%" /></div>
+      </p>
+      <p>
+        <input type="number" id="dinero" />
+        <input type="button" value="Extraer" id="extraer" />
+      </p>
+      <p id="finalizado"></p>
+      <p id="sinDinero"></p>
+      <p id="resultado"></p>
+    </div>
+    <div class="col-sm-4">
+      <br /><hr color="#47646b" />
+      <h2><font color="#e21b1b">Saldo en la maquina:</font></h2>
+      <p>En el cajero hay una cantidad limitada de<br />
+         billetes. Abajo puedes ver el balance actual.</p>
+      <p id="saldoBilletes" style="background-color: #e8e8e8 ;color: red"></p>
+      <p id="saldoPesos" style="background-color: #e8e8e8 ;color: blue"></p> <hr color="#47646b"/>
+      <p style="text-align: right; font-family: cursive ; font-size: 8pt ; color: black">Made by CrisjanLp</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="cajero.js"></script>
+</body>
+</html>
